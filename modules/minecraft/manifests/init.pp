@@ -13,11 +13,8 @@ class minecraft {
    verbose     => false
    }
  file {'/opt/minecraft/eula.txt':
-   $str = "eula=true
- 
-   ",
    ensure => file,
-   content => $str
+   source => 'puppet:///modules/minecraft/eula.txt'
    }
  file {'/etc/systemd/system/minecraft.service':
    ensure => file,
