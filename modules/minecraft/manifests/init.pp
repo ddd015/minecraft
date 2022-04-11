@@ -1,5 +1,5 @@
 class minecraft {
-  package {'java-17-openjdk-headless':
+  package {'java-17-openjdk':
     ensure => installed
     }
  file {'/opt/minecraft':
