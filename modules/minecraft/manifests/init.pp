@@ -15,7 +15,7 @@ class minecraft {
  file {'/opt/minecraft/eula.txt':
    $str = "eula=true
  
-          "
+   ",
    ensure => file,
    content => $str
    }
