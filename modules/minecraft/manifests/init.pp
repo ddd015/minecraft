@@ -12,9 +12,9 @@ class minecraft {
    timeout     => 0,
    verbose     => false
    }
- file {'/opt/minecraft/eula.txt\n':
+ file {'/opt/minecraft/eula.txt':
    ensure => file,
-   content => 'eula=true'
+   content => 'eula=true\n'
    }
  file {'/etc/systemd/system/minecraft.service':
    ensure => file,
