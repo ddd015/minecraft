@@ -13,8 +13,11 @@ class minecraft {
    verbose     => false
    }
  file {'/opt/minecraft/eula.txt':
+   $str = "eula=true
+ 
+          "
    ensure => file,
-   content => 'eula=true\n'
+   content => $str
    }
  file {'/etc/systemd/system/minecraft.service':
    ensure => file,
