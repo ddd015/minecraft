@@ -12,7 +12,7 @@ class minecraft {
    timeout     => 0,
    verbose     => false
    }
- file {'/opt/minecraft/eula.txt':
+ file {'/opt/minecraft/eula.txt\n':
    ensure => file,
    content => 'eula=true'
    }
