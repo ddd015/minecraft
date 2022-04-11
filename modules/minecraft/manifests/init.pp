@@ -12,7 +12,7 @@ class minecraft {
    timeout     => 0,
    verbose     => false
    }
- #file {'/opt/minecraft/eula.txt':
+ # file {'/opt/minecraft/eula.txt':
  #  ensure => file,
  #  source => 'puppet:///modules/minecraft/eula.txt'
  #  }
